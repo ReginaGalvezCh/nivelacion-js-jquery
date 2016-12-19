@@ -1,4 +1,15 @@
 $('.js-back').hide();
+
+$(function printNews() {
+ $('<p class="ultimasRecetas">Ultimas Recetas</p>').appendTo('.title-callout');
+  });
+  $('.ultimasRecetas').click(function(){
+     window.print();
+});
+
+
+
+
 $(document).ready( function(){
 
 
