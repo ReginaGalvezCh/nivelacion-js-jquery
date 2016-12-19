@@ -1,9 +1,9 @@
 $('.js-back').hide();
 
 $(function printNews() {
- $('<p class="ultimasRecetas">Ultimas Recetas</p>').appendTo('.title-callout');
+ $('<p>Ultimas Recetas</p>').appendTo('.noticias');
   });
-  $('.ultimasRecetas').click(function(){
+  $('.noticias').click(function(){
      window.print();
 });
 
