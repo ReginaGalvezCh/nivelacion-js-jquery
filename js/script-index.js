@@ -1,19 +1,18 @@
 $('.js-back').hide();
 
 $(function printNews() {
- $('<p>Ultimas Recetas</p>').appendTo('.noticias');
-  });
-  $('.noticias').click(function(){
-     window.print();
+	$('<p>Ultimas Recetas</p>').appendTo('.noticias');
+});
+$('.noticias').click(function(){
+	window.print();
 });
 
 
 
 
+
+
 $(document).ready( function(){
-
-
-
 
 
 
@@ -29,7 +28,13 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
-}
+	for (i = 0; i < recipesArray.length; i++) 
+		if ('highlighted' === true) { 
+			renderRecipe();	
+		}
+	}
+
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
